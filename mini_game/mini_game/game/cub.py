@@ -30,6 +30,10 @@ def roll_cub(num_cub):
 def champion(num_cub):
     dice_results_1, total_1 = roll_cub(num_cub)
     dice_results_2, total_2 = roll_cub(num_cub)
+    print(f"У меня выпало {num_cub} кубиков: {dice_results_1}\n"
+          f"Сумма результата: {total_1}")
+    print(f"У тебя выпало {num_cub} кубиков: {dice_results_2}\n"
+          f"Сумма результата: {total_2}")
     if total_1 > total_2:
         print("Ты проиграл, повезет в следующий раз!")
         return 0
